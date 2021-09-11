@@ -1,0 +1,40 @@
+.site-header{
+    height: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    height: 3.6rem;
+}
+
+.search{
+    &__input{
+        font-family: inherit;
+        font-size: inherit;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $color-light;
+        width: 90%;
+        
+        &:focus {
+            outline: none;
+            color: $color-white;
+        }
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__icon {
+        color: $color-light;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+}

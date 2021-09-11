@@ -1,7 +1,9 @@
 @import "variables/variables";
+@import "utilities/utilities";
 @import "mixins/mixins";
 @import "nesting/nesting";
-@import "utilities/utilities";
+@import "components/header";
+@import "components/nav";
 @import "layout/layout";
 @import "base/base";
 

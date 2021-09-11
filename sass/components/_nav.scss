@@ -1,0 +1,15 @@
+.user-nav{
+
+    &__icon-box {
+        cursor: pointer;
+    }
+
+    &__icon {
+        color: $color-light;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+}

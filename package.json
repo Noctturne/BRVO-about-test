@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w sass/main.scss -o css/style.css --recursive"
+    "sass": "sass --watch sass/main.scss css/style.css"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,5 @@
     "url": "https://github.com/Noctturne/BRVO-about-test/issues"
   },
   "homepage": "https://github.com/Noctturne/BRVO-about-test#readme",
-  "devDependencies": {
-    "node-sass": "^6.0.1"
-  }
+  "devDependencies": {}
 }

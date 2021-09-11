@@ -1,0 +1,28 @@
+.container{
+    max-width: 140rem;
+    margin: 8rem auto;
+    background-image: $gradient-dark;
+    border-radius: 0.5rem;
+    box-shadow: $box-shadow-base;
+    min-height: 80rem;
+}
+
+.site-header{
+    height: 7rem;
+    border-bottom: 0.1rem ridge $color-light;
+}
+
+.content{
+    display: flex;
+}
+
+/* flex grow | flex-srhink | flex-basis */
+.sidebar {
+    flex: 0 0 18%;
+    border-right: 0.1rem solid $color-light;
+}
+
+/* Grows as much as it can */
+.about {
+    flex: 1;
+}

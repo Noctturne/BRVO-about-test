@@ -1,0 +1,62 @@
+/*      FONT        */
+/*      COLORS        */
+/*      SHADOWS        */
+/*      GRADIENTS        */
+.container {
+  max-width: 140rem;
+  margin: 8rem auto;
+  background-image: linear-gradient(to right bottom, #212529, #000);
+  border-radius: 0.5rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  min-height: 80rem;
+}
+
+.site-header {
+  height: 7rem;
+  border-bottom: 0.1rem ridge #D5D5D5;
+}
+
+.content {
+  display: flex;
+}
+
+/* flex grow | flex-srhink | flex-basis */
+.sidebar {
+  flex: 0 0 18%;
+  border-right: 0.1rem solid #D5D5D5;
+}
+
+/* Grows as much as it can */
+.about {
+  flex: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #D5D5D5;
+  line-height: 1.6;
+  background-image: linear-gradient(to right bottom, #212529, #000);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */

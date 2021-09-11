@@ -47,6 +47,68 @@
   color: #FFF;
 }
 
+/* flex grow | flex-srhink | flex-basis */
+.sidebar {
+  flex: 0 0 18%;
+  border-right: 0.1rem solid #D5D5D5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-nav {
+  margin-top: 3.5rem;
+}
+.side-nav__item {
+  list-style: none;
+  position: relative;
+}
+.side-nav__item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.side-nav__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0.3rem;
+  background-color: #ad9b62;
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
+}
+.side-nav__item:hover::before, .side-nav__item--active::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+.side-nav__link:link, .side-nav__link:visited {
+  color: #D5D5D5;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+.side-nav__link:hover {
+  color: #FFF;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+.social-icons__link {
+  padding: 0.5rem;
+}
+.social-icons__icon {
+  color: #D5D5D5;
+}
+.social-icons__icon:hover {
+  color: #FFF;
+}
+
 .container {
   max-width: 140rem;
   margin: 8rem auto;
@@ -58,12 +120,6 @@
 
 .content {
   display: flex;
-}
-
-/* flex grow | flex-srhink | flex-basis */
-.sidebar {
-  flex: 0 0 18%;
-  border-right: 0.1rem solid #D5D5D5;
 }
 
 /* Grows as much as it can */
@@ -89,7 +145,7 @@ html {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 400;
   color: #D5D5D5;
   line-height: 1.6;

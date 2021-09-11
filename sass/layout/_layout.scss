@@ -11,11 +11,6 @@
     display: flex;
 }
 
-/* flex grow | flex-srhink | flex-basis */
-.sidebar {
-    flex: 0 0 18%;
-    border-right: 0.1rem solid $color-light;
-}
 
 /* Grows as much as it can */
 .about {

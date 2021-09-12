@@ -1,2 +1,6 @@
 /*      GRADIENTS        */
 $gradient-dark: linear-gradient(to right bottom, $color-dark, $color-primary);
+
+$border-dark: 2px solid $color-dark-light;
+
+.text-center{ text-align: center; }

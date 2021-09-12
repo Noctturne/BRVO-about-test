@@ -1,7 +1,6 @@
 /* flex grow | flex-srhink | flex-basis */
 .sidebar {
     flex: 0 0 18%;
-    border-right: 0.1rem solid $color-light;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

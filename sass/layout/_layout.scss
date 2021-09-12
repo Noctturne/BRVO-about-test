@@ -16,3 +16,20 @@
 .about {
     flex: 1;
 }
+
+.detail {
+    display: flex;
+    padding: 4.5rem;
+}
+
+.description {
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+    padding: 3rem;
+    box-shadow: $box-shadow-base;
+}
+
+.user-reviews {
+    flex: 1;
+    box-shadow: $box-shadow-base;
+}

@@ -1,6 +1,7 @@
 .gallery {
     display: flex;
-
+    padding: 0 2rem;
+    
     &__item {
         box-shadow: $gradient-dark;
     }

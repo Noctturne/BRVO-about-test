@@ -2,8 +2,13 @@
 /*      COLORS        */
 /*      SHADOWS        */
 /*      GRADIENTS        */
+.text-center {
+  text-align: center;
+}
+
 .gallery {
   display: flex;
+  padding: 0 2rem;
 }
 .gallery__item {
   box-shadow: linear-gradient(to right bottom, #212529, #000);
@@ -49,6 +54,19 @@
   color: #FFF;
 }
 
+.list {
+  margin: 2rem 0;
+  list-style: none;
+  padding: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.list__item {
+  flex: 0 0 50%;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
 .user-nav__icon-box {
   cursor: pointer;
 }
@@ -62,7 +80,6 @@
 /* flex grow | flex-srhink | flex-basis */
 .sidebar {
   flex: 0 0 18%;
-  border-right: 0.1rem solid #D5D5D5;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -137,6 +154,23 @@
 /* Grows as much as it can */
 .about {
   flex: 1;
+}
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+}
+
+.description {
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  padding: 3rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+.user-reviews {
+  flex: 1;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 }
 
 * {

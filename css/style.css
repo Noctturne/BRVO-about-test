@@ -7,6 +7,7 @@
 }
 
 /*      SHADOWS        */
+/* BREAKPOINTS  */
 .btn-inline {
   background-color: transparent;
   border: 1px solid #D5D5D5;
@@ -49,6 +50,12 @@ figure {
   padding: 3rem;
   margin-bottom: 3rem;
 }
+@media only screen and (max-width: 36em) {
+  figure {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem;
+  }
+}
 
 blockquote {
   font-style: italic;
@@ -75,6 +82,18 @@ figcaption {
   width: 100%;
   display: block;
 }
+@media only screen and (max-width: 48em) {
+  .gallery {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
 
 .site-header {
   height: 7rem;
@@ -82,6 +101,11 @@ figcaption {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 4rem;
+}
+@media only screen and (max-width: 36em) {
+  .site-header {
+    padding: 3rem 2rem;
+  }
 }
 
 .logo {
@@ -99,6 +123,16 @@ figcaption {
 .search__input:focus {
   outline: none;
   color: #FFF;
+}
+@media only screen and (max-width: 48em) {
+  .search__input {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .search__input {
+    width: 80%;
+  }
 }
 .search__button {
   background-color: transparent;
@@ -153,6 +187,11 @@ figcaption {
 .side-nav__item:not(:last-child) {
   margin-bottom: 0.5rem;
 }
+@media only screen and (max-width: 48em) {
+  .side-nav__item {
+    flex: 1;
+  }
+}
 .side-nav__item::before {
   content: "";
   position: absolute;
@@ -181,6 +220,17 @@ figcaption {
 .side-nav__link:hover {
   color: #FFF;
 }
+@media only screen and (max-width: 48em) {
+  .side-nav {
+    display: flex;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .side-nav {
+    flex-direction: column;
+  }
+}
 
 .social-icons {
   display: flex;
@@ -197,6 +247,7 @@ figcaption {
   color: #FFF;
 }
 
+/* LAYOUT */
 .container {
   max-width: 140rem;
   margin: 8rem auto;
@@ -205,9 +256,21 @@ figcaption {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   min-height: 80rem;
 }
+@media only screen and (max-width: 87.5em) {
+  .container {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
 
 .content {
   display: flex;
+}
+@media only screen and (max-width: 48em) {
+  .content {
+    flex-direction: column;
+  }
 }
 
 /* Grows as much as it can */
@@ -219,12 +282,35 @@ figcaption {
   display: flex;
   padding: 4.5rem;
 }
+@media only screen and (max-width: 48em) {
+  .detail {
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .detail {
+    flex-direction: column;
+  }
+}
 
 .description {
   flex: 0 0 60%;
   margin-right: 4.5rem;
   padding: 3rem;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width: 48em) {
+  .description {
+    margin-right: 2.5rem;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .description {
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
 }
 
 .user-reviews {
@@ -253,6 +339,11 @@ figcaption {
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+@media only screen and (max-width: 64em) {
+  html {
+    font-size: 60%;
+  }
 }
 
 body {

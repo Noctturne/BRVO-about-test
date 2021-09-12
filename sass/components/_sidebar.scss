@@ -16,6 +16,11 @@
         &:not(:last-child) {
             margin-bottom: .5rem;
         }
+
+        @media only screen and (max-width: $breakpoint-md) {
+           flex: 1;
+        }
+
     }
 
     &__item::before {
@@ -50,6 +55,15 @@
 
     &__link:hover {
         color: $color-white;
+    }
+
+    @media only screen and (max-width: $breakpoint-md) {
+        display: flex;
+        margin: 0;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        flex-direction: column;
     }
 }
 

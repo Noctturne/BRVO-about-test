@@ -1,3 +1,4 @@
+/* LAYOUT */
 .container{
     max-width: 140rem;
     margin: 8rem auto;
@@ -5,10 +6,21 @@
     border-radius: 0.5rem;
     box-shadow: $box-shadow-base;
     min-height: 80rem;
+
+
+    @media only screen and (max-width: $breakpoint-xlg) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 .content{
     display: flex;
+
+    @media only screen and (max-width: $breakpoint-md) {
+        flex-direction: column;
+    }
 }
 
 
@@ -20,6 +32,14 @@
 .detail {
     display: flex;
     padding: 4.5rem;
+
+    @media only screen and (max-width: $breakpoint-md) {
+        padding: 2rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        flex-direction: column;
+    }
 }
 
 .description {
@@ -27,6 +47,17 @@
     margin-right: 4.5rem;
     padding: 3rem;
     box-shadow: $box-shadow-base;
+
+    @media only screen and (max-width: $breakpoint-md) {
+        margin-right: 2.5rem;
+        padding: 2rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
 }
 
 .user-reviews {

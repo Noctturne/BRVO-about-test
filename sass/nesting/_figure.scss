@@ -1,0 +1,35 @@
+figure {
+    box-shadow: $box-shadow-base;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+figcaption {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+.review {
+    &__photo {
+
+    }
+
+    &__user-box {
+
+    }
+
+    &__user-name {
+        color: $color-secondary;
+        cursor: pointer;
+    }
+
+    &__user-date {
+
+    }
+}
+

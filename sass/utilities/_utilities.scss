@@ -1,6 +1,11 @@
 /*      GRADIENTS        */
 $gradient-dark: linear-gradient(to right bottom, $color-dark, $color-primary);
 
+/*      BORDERS        */
 $border-dark: 2px solid $color-dark-light;
+$border-light: 1px solid $color-light;
 
 .text-center{ text-align: center; }
+
+/*      SHADOWS        */
+$box-shadow-base:  0 2rem 6rem rgba(0, 0, 0, .3);

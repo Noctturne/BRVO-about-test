@@ -2,11 +2,23 @@
 /*      COLORS        */
 /*      SHADOWS        */
 /*      GRADIENTS        */
+.gallery {
+  display: flex;
+}
+.gallery__item {
+  box-shadow: linear-gradient(to right bottom, #212529, #000);
+}
+.gallery__photo {
+  width: 100%;
+  display: block;
+}
+
 .site-header {
   height: 7rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 2rem 4rem;
 }
 
 .logo {

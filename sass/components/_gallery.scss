@@ -1,0 +1,12 @@
+.gallery {
+    display: flex;
+
+    &__item {
+        box-shadow: $gradient-dark;
+    }
+
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+}

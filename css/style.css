@@ -185,6 +185,7 @@ figcaption {
 .social-icons {
   display: flex;
   justify-content: center;
+  margin: 2.6rem 0;
 }
 .social-icons__link {
   padding: 0.5rem;
@@ -231,6 +232,11 @@ figcaption {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.show {
+  padding: 2.5rem 0;
+  text-align: center;
 }
 
 * {
